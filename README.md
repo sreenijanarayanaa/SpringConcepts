@@ -13,13 +13,10 @@ Application context is more advanced one which includes features like event hand
 Dependency inJection is a design pattern and a part of IOC, DI is the way we implement IOC.
 It allows objects to be injected with their dependencies rather than us creating those dependencies.
 There are 2 types of DI's:
-1. Constructor injection
-2. Setter Injection
-   
-_1. Constructor injection_
+1. _Constructor injection_
    -> Gives dependencies to the object when it is created, ensuring they are ready to use immediately
    -> It makes sure all the needed dependencies are available right away
-_2. Setter Injection_
+2. _Setter Injection_
    -> Gives dependencies to setter method after object is created allowing changes later
    -> It allows for more flexibility for changing or adding dependencies later
 
