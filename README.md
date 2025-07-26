@@ -2,7 +2,7 @@
 
 ## 🔄 Inversion of Control (IoC)
 
-**IoC** is a design principle where the control of object creation and application flow is handed over to the framework rather than being manually handled by the developer.
+**IoC** is a design principle where framework takes the control of flow of the program rather than by the developer, Spring IOC Container is responsible for creating, configuring, and managing the lifecycle of objects called beans.
 
 ### 🌱 Key Points:
 - The framework manages object lifecycle (creation, configuration, destruction).
