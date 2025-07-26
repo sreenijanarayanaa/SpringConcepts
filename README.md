@@ -1,9 +1,5 @@
 # 🧠 Inversion of Control (IoC) & Dependency Injection (DI) in Spring
 
-This guide provides a concise overview of **IoC** and **DI** in the context of the Spring Framework, complete with conceptual breakdowns and examples.
-
----
-
 ## 🔄 Inversion of Control (IoC)
 
 **IoC** is a design principle where the control of object creation and application flow is handed over to the framework rather than being manually handled by the developer.
