@@ -20,7 +20,7 @@
 
 ## ⚙️ Dependency Injection (DI)
 
-**DI**Dependency inJection is a design pattern and a part of IOC, DI is the way we implement IOC.
+**DI**-Dependency inJection is a design pattern and a part of IOC, DI is the way we implement IOC.
 It allows Spring to inject required dependencies into objects rather than the object instantiating them itself.
 
 ### 🎯 Purpose:
