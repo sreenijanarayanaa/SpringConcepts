@@ -104,13 +104,13 @@ In Spring Framework, “scope” defines the lifecycle and visibility of a bean 
 
 Spring provides several predefined bean scopes that dictate the lifecycle of beans. These are:
 
-**1. Singleton (Default)
+1. Singleton (Default)
 2. Prototype
 3. Request
 4. Session
 5. Application
 6. WebSocket
-**
+
 
 ### Singleton Scope
 The Singleton scope is the default scope in Spring. In this scope, the Spring container creates a single instance of the bean, and this instance is shared across the entire application.
