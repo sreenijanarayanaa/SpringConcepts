@@ -49,7 +49,7 @@ It allows Spring to inject required dependencies into objects rather than the ob
 
    -> Suitable for optional dependencies.
    
-3. field injection
+3. _field injection_
 
    -> Dependencies are injected directly into fields using @Autowired Annotation.
 
