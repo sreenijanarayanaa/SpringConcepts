@@ -21,6 +21,7 @@
 ## ⚙️ Dependency Injection (DI)
 
 **DI**-Dependency inJection is a design pattern and a part of IOC, DI is the way we implement IOC.
+
 It allows Spring to inject required dependencies into objects rather than the object instantiating them itself.
 
 ### 🎯 Purpose:
@@ -31,13 +32,29 @@ It allows Spring to inject required dependencies into objects rather than the ob
 ---
 
 ## 🛠️ DI Types & Examples
+
 1. _Constructor injection_
-   -> Gives dependencies to the object when it is created, ensuring they are ready to use immediately
-   -> It makes sure all the needed dependencies are available right away
-2. _Setter Injection_
-   -> Gives dependencies to setter method after object is created allowing changes later
+   
+   -> Gives dependencies to the object when it is created via class constructor, ensuring they are ready to use immediately
+   
+   -> It is widely used and recommended for mandatory dependencies.
+
+   -> Promotes **immutability and better testability**
+   
+3. _Setter Injection_
+   
+   -> Gives dependencies to setter method after object is created allowing changes later 
+   
    -> It allows for more flexibility for changing or adding dependencies later
 
+   -> Suitable for optional dependencies.
+   
+3. field injection
+
+   -> Dependencies are injected directly into fields using @Autowired Annotation.
+
+   -> Quick and concise, but not recommended for production due to poor testability and hidden dependencies.
+   
 ### 1️⃣ Constructor Injection
 
 Injects dependencies when the object is created—ensures they're available right away.
@@ -68,22 +85,19 @@ public class Car {
     }
 }
 ```
-👇 Autowiring in Another Component
+3️⃣ Field Injection
+
 ```java
 @Component
-public class Vehicle {
-    private final Engine engine;
-
+public class Car {
     @Autowired
-    public Vehicle(Engine engine) {
-        this.engine = engine;
-    }
+    private Engine engine;
 
     public void drive() {
         engine.start();
-        System.out.println("Vehicle is driving");
     }
 }
+
 ```
 👇 Spring Boot Main Application
 ```java
