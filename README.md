@@ -54,6 +54,11 @@ It allows Spring to inject required dependencies into objects rather than the ob
    -> Dependencies are injected directly into fields using @Autowired Annotation.
 
    -> Quick and concise, but not recommended for production due to poor testability and hidden dependencies.
+
+### Which Is the Best Way of Injecting Beans and Why?
+The best way to inject beans in Spring is using `constructor injection`
+It ensures that all necessary parts are provided when the object is created. 
+This makes the object more reliable and easier to test because its dependencies are clear and cannot change.
    
 ### 1️⃣ Constructor Injection
 
