@@ -117,7 +117,7 @@ public class DemoApplication {
 ```
 # 🧠scope of beans
 
-In Spring Framework, “scope” defines the lifecycle and visibility of a bean within the Spring container. The scope determines when and how a bean is created, and how it is shared among different parts of an application. Choosing the right bean scope is crucial for efficient resource management and optimal performance. In this article, we will delve into the various predefined bean scopes provided by Spring and illustrate their usage with examples.
+In Spring Framework, “scope” defines the `lifecycle and visibility of a bean`within the Spring container. The scope determines when and how a bean is created, and how it is shared among different parts of an application. Choosing the right bean scope is crucial for efficient resource management and optimal performance. In this article, we will delve into the various predefined bean scopes provided by Spring and illustrate their usage with examples.
 
 ## Predefined Bean Scopes
 
